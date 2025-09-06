@@ -31,7 +31,7 @@ const server = http.createServer((request, response) =>{
     '.otf': 'application/font-otf'
   };
 
-  const contenteType = mimeTypes[filePathExtended] || 'application/octet-sctrem';
+  const contenteType = mimeTypes[filePathExtended] || 'application/octet-sctrem'; 
 
   fs.readFile(filePath, (error, content) => {
     if(error){
